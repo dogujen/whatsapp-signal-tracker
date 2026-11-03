@@ -1,0 +1,35 @@
+{
+    "name": "whatsapp-signal-tracker",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "description": "Terminal UI for RTT-based WhatsApp & Signal activity analysis (educational proof-of-concept)",
+    "license": "MIT",
+    "engines": {
+        "node": ">=20"
+    },
+    "scripts": {
+        "prestart": "node scripts/check-deps.mjs",
+        "prebuild": "node scripts/check-deps.mjs",
+        "start": "tsx src/index.ts",
+        "build": "tsc",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@hapi/boom": "^9.1.4",
+        "@whiskeysockets/baileys": "^7.0.0-rc.9",
+        "jsqr": "^1.4.0",
+        "pino": "^10.4.0",
+        "pngjs": "^7.0.0",
+        "qrcode-terminal": "^0.12.0",
+        "ws": "^8.22.1"
+    },
+    "devDependencies": {
+        "@types/node": "^22.18.0",
+        "@types/pngjs": "^6.0.5",
+        "@types/qrcode-terminal": "^0.12.2",
+        "@types/ws": "^8.18.1",
+        "tsx": "^4.21.0",
+        "typescript": "^5.7.2"
+    }
+}

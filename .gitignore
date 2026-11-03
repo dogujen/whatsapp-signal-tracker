@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# WhatsApp / Signal session state (never commit)
+auth_info_baileys/
+auth_info_multi/
+baileys_auth_info/
+.wwebjs_auth/
+*.session
+*.session-journal
+signal-cli/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs and OS files
+*.log
+.DS_Store
